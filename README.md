@@ -90,6 +90,7 @@ Identifies countries with highest infection rate relative to population.
 ---
 
 ### 5. Death Count per Population
+
 ```sql
 SELECT
   location, MAX(total_deaths) AS total_death_count
@@ -100,6 +101,10 @@ WHERE
 GROUP BY location
 ORDER BY total_death_count DESC;
 ```
+
+<p align="center">
+  <img src="images/total_death_count_by_location.png" width="400"/>
+</p>
 
 Lists countries with the highest cumulative death toll.
 
